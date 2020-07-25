@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_dim_16"
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show_simple_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_simple_toast"
+        android:theme="@style/customButtonPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/customButtonPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
