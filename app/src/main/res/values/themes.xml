@@ -25,7 +25,7 @@
         <!-- ================================= -->
         <!-- Custom Design type -->
         <!-- ================================= -->
-        <item name="defaultPrimaryBackground">@color/colorWhite</item>
+        <item name="defaultPrimaryBackground">@drawable/base_layout_background</item>
 
         <item name="textSubTitle">@style/textSubTitle</item>
 
