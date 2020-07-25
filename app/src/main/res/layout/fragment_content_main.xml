@@ -3,19 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="@dimen/dp_dim_16"
-    >
+    android:padding="@dimen/dp_dim_16">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_show_simple_toast"
+        android:id="@+id/btn_go_to_themes"
+        style="?attr/actionButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/show_simple_toast"
-        android:theme="@style/customButtonPrimary" />
+        android:text="@string/go_to_themes" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/customButtonPrimary"
+        android:id="@+id/btn_go_to_toasts"
+        style="?attr/actionButtonStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_toasts" />
 
 </LinearLayout>

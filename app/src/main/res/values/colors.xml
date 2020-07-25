@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!-- base theme colors-->
+    <color name="colorPrimary">#64b5f6</color>
+    <color name="colorPrimaryDark">#2286c3</color>
+    <color name="colorPrimaryLight">#9be7ff</color>
+    <color name="colorAccent">#84ffff</color>
+    <color name="colorSecondary">#84ffff</color>
+    <color name="colorSecondaryDark">#4bcbcc</color>
+    <color name="colorSecondaryLight">#baffff</color>
+
+    <color name="colorTextPrimary">#000000</color>
+
+    <!-- Holo light theme colors -->
+    <color name="holoPrimaryBackground">#AFAFAF</color>
+    <color name="holoSecondaryBackground">@color/colorWhite</color>
+
+
+    <!-- standard colors -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
 </resources>

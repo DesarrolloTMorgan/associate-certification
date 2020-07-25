@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="defaultPrimaryBackground" format="reference" />
+    <attr name="textSubTitle" format="reference" />
+    <attr name="textLarge" format="reference" />
+    <attr name="textRegular" format="reference" />
+    <attr name="whiteBackground" format="reference" />
+    <attr name="customButton" format="reference" />
+    <attr name="spinner" format="reference" />
+
+</resources>

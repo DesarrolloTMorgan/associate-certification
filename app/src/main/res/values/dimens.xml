@@ -11,6 +11,7 @@
 
     <!-- base dimensions for text-->
     <dimen name="text_dim_8">8sp</dimen>
+    <dimen name="text_dim_12">12sp</dimen>
     <dimen name="text_dim_15">15sp</dimen>
     <dimen name="text_dim_16">16sp</dimen>
     <dimen name="text_dim_18">18sp</dimen>

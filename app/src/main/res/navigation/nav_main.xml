@@ -23,6 +23,7 @@
 
     <fragment
         android:id="@+id/fragment_theme_chooser"
+        android:name="com.omnicluster.associatecertification.themes.ThemeChooserFragment"
         tools:layout="@layout/fragment_theme_chooser" />
 
 </navigation>

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">AssociateCertification</string>
+
+    <!-- Content main -->
+    <string name="go_to_themes">Go to themes section</string>
+    <string name="go_to_toasts">Go to toasts section</string>
+
+
+    <!-- Theme chooser -->
+    <string name="settings_text_select_theme">Select Theme:</string>
+    <string name="settings_text_credentials">Credentials</string>
+    <string name="settings_text_username_hint">username</string>
+    <string name="settings_text_password_hint">password</string>
+    <string name="settings_text_sync_automatically">Sync automatically</string>
+    <string name="settings_text_location">Location</string>
+    <string name="settings_text_state_on">On</string>
+    <string name="settings_text_state_off">Off</string>
+    <string name="settings_text_clear_data">Clear Data</string>
+    <string-array name="theme_array">
+        <item>Default app theme</item>
+        <item>Custom Holo Light</item>
+    </string-array>
+
+    <!-- Toasts -->
+    <string name="show_simple_toast">Show simple toast</string>
+    <string name="show_custom_toast">Show custom toast</string>
+
 </resources>
