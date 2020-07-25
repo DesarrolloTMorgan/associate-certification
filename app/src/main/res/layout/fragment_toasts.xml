@@ -7,14 +7,16 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_show_simple_toast"
+        style="?attr/textAppearanceButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/show_simple_toast"
-        android:theme="@style/customButtonPrimary" />
+        android:text="@string/show_simple_toast" />
 
     <com.google.android.material.button.MaterialButton
-        style="@style/customButtonPrimary"
+        android:id="@+id/btn_show_custom_layout_toast"
+        style="?attr/textAppearanceButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/show_custom_toast" />
 
 </LinearLayout>

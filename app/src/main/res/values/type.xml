@@ -37,8 +37,10 @@
     <!--letterSpacing, etc. to define a custom appearance for each and see how they are -->
     <!--applied globally across your app.-->
 
-    <style name="TextAppearance.JohnSilver.Button" parent="TextAppearance.MaterialComponents.Button">
+    <style name="baseButtonText" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_dim_16</item>
     </style>
 
 </resources>

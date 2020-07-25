@@ -19,7 +19,7 @@
         <!-- see https://www.material.io/develop/android/theming/typography -->
         <!-- see also https://material.io/design/typography/the-type-system.html#type-scale -->
         <!-- ================================= -->
-        <item name="textAppearanceButton">@style/TextAppearance.JohnSilver.Button</item>
+        <item name="textAppearanceButton">@style/baseButtonText</item>
 
 
         <!-- ================================= -->

@@ -19,11 +19,14 @@
 
     <fragment
         android:id="@+id/fragment_toasts"
+        android:name="com.omnicluster.associatecertification.androidcore.ToastsFragment"
+        android:label="@string/fragment_toasts"
         tools:layout="@layout/fragment_toasts" />
 
     <fragment
         android:id="@+id/fragment_theme_chooser"
         android:name="com.omnicluster.associatecertification.themes.ThemeChooserFragment"
+        android:label="@string/fragment_themes"
         tools:layout="@layout/fragment_theme_chooser" />
 
 </navigation>
