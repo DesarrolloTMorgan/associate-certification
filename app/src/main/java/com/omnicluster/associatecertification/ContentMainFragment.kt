@@ -11,11 +11,14 @@ class ContentMainFragment : BaseFragment(R.layout.fragment_content_main) {
 
     private val binding by viewLifecycle(FragmentContentMainBinding::bind)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun setupView() {
+        val navController = findNavController()
         binding.btnGoToThemes.setOnClickListener {
-            findNavController().navigate(R.id.action_fragment_main_content_to_fragment_theme_chooser)
+            navController.navigate(R.id.action_fragment_main_content_to_fragment_theme_chooser)
+        }
+
+        binding.btnGoToToasts.setOnClickListener {
+            navController.navigate(R.id.action_fragment_main_content_to_fragment_toasts)
         }
     }
-
 }

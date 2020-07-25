@@ -1,12 +1,7 @@
 package com.omnicluster.associatecertification.themes
 
-import android.os.Build
-import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.AdapterView
-import androidx.fragment.app.Fragment
 import com.omnicluster.associatecertification.R
 import com.omnicluster.associatecertification.databinding.FragmentThemeChooserBinding
 import com.omnicluster.associatecertification.util.BaseFragment
@@ -17,11 +12,7 @@ class ThemeChooserFragment : BaseFragment(R.layout.fragment_theme_chooser) {
 
     private val binding by viewLifecycle(FragmentThemeChooserBinding::bind)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Utils.onActivityCreateSetTheme(requireActivity())
-        }
+    override fun setupView() {
         setUpSpinnerItemSelection()
     }
 

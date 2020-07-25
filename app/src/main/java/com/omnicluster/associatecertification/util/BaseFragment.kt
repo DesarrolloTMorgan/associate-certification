@@ -23,4 +23,11 @@ abstract class BaseFragment(@LayoutRes private val fragmentLayout: Int) : Fragme
         return inflater.inflate(fragmentLayout, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupView()
+    }
+
+    abstract fun setupView()
+
 }
