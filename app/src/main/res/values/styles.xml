@@ -41,6 +41,19 @@
         <item name="android:textSize">@dimen/text_dim_12</item>
     </style>
 
+    <!-- ================== -->
+    <!-- Texts input styles -->
+    <!-- ================== -->
+    <style name="textInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="errorTextColor">@color/errorColor</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="customTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
 
 
     <!-- ================== -->

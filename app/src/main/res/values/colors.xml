@@ -10,6 +10,7 @@
     <color name="colorSecondaryLight">#baffff</color>
 
     <color name="colorTextPrimary">#000000</color>
+    <color name="errorColor">#ff0033</color>
 
     <!-- Holo light theme colors -->
     <color name="holoPrimaryBackground">#AFAFAF</color>

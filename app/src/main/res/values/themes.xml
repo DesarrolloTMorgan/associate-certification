@@ -31,7 +31,7 @@
 
         <item name="textLarge">@style/textLarge</item>
 
-        <item name="textRegular">@style/textDefault</item>
+        <item name="textRegular">?attr/textAppearanceBody1</item>
 
         <item name="whiteBackground">@color/colorWhite</item>
 
@@ -40,6 +40,8 @@
         <item name="spinner">@style/baseSpinner</item>
 
         <item name="actionBarStyle">@style/baseToolbar</item>
+
+        <item name="textInputLayoutStyle">@style/textInputLayout</item>
     </style>
 
 </resources>
