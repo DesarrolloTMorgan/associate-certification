@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_fragment_main_content_to_fragment_theme_chooser"
             app:destination="@id/fragment_theme_chooser" />
+        <action
+            android:id="@+id/action_fragment_main_content_to_fragment_snackbars"
+            app:destination="@id/fragment_snackbars" />
     </fragment>
 
     <fragment
@@ -28,5 +31,11 @@
         android:name="com.omnicluster.associatecertification.themes.ThemeChooserFragment"
         android:label="@string/fragment_themes"
         tools:layout="@layout/fragment_theme_chooser" />
+
+    <fragment
+        android:id="@+id/fragment_snackbars"
+        android:name="com.omnicluster.associatecertification.androidcore.SnackBarsFragment"
+        android:label="@string/fragment_snackbars"
+        tools:layout="@layout/fragment_snackbars" />
 
 </navigation>

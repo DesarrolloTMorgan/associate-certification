@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_dim_16"
+    tools:background="@drawable/base_layout_background">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show_simple_snackbar"
+        style="?attr/textAppearanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_simple_snackbar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show_custom_snackbar"
+        style="?attr/textAppearanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_custom_snackbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_snackbar"
+        style="?attr/textInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_custom_snackbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_custom_snackbar_message"
+            style="?attr/textInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include layout="@layout/color_selector" />
+
+</LinearLayout>

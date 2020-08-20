@@ -10,7 +10,13 @@
     <color name="colorSecondaryLight">#baffff</color>
 
     <color name="colorTextPrimary">#000000</color>
-    <color name="errorColor">#ff0033</color>
+    <color name="colorOnBackground">#8bbefd</color>
+
+    <!-- states colors-->
+    <color name="errorColor">#ff4d4f</color>
+    <color name="successColor">#52c41a</color>
+    <color name="warningColor">#faad14</color>
+    <color name="infoColor">#1890ff</color>
 
     <!-- Holo light theme colors -->
     <color name="holoPrimaryBackground">#AFAFAF</color>

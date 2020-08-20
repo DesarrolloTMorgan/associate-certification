@@ -4,10 +4,12 @@
     <!-- Fragments names -->
     <string name="fragment_themes">Theme selection</string>
     <string name="fragment_toasts">Toasts messages</string>
+    <string name="fragment_snackbars">Snackbar messages</string>
 
     <!-- Content main -->
     <string name="go_to_themes">Go to themes section</string>
     <string name="go_to_toasts">Go to toasts section</string>
+    <string name="go_to_snackbars">Go to snackbars section</string>
 
 
     <!-- Theme chooser -->
@@ -29,5 +31,11 @@
     <string name="show_simple_toast">Show simple toast</string>
     <string name="show_custom_toast">Show custom toast</string>
     <string name="single_toast_message">Hello from toasts view!</string>
+
+    <!-- Snackbars -->
+    <string name="show_simple_snackbar">Show simple snackbar</string>
+    <string name="show_custom_snackbar">Show custom snackbar</string>
+    <string name="simple_snackbar_message">Hello Snackbar</string>
+    <string name="hint_custom_snackbar">Type a message</string>
 
 </resources>

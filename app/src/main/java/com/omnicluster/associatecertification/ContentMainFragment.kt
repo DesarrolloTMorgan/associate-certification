@@ -20,5 +20,9 @@ class ContentMainFragment : BaseFragment(R.layout.fragment_content_main) {
         binding.btnGoToToasts.setOnClickListener {
             navController.navigate(R.id.action_fragment_main_content_to_fragment_toasts)
         }
+
+        binding.btnGoToSnackbars.setOnClickListener {
+            navController.navigate(R.id.action_fragment_main_content_to_fragment_snackbars)
+        }
     }
 }
