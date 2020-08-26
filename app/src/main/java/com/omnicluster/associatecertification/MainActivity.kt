@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         setupNavigationGraph()
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp()
+    }
+
     private fun setupNavigationGraph() {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
