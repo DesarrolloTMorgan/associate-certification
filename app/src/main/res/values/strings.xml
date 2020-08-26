@@ -37,5 +37,6 @@
     <string name="show_custom_snackbar">Show custom snackbar</string>
     <string name="simple_snackbar_message">Hello Snackbar</string>
     <string name="hint_custom_snackbar">Type a message</string>
+    <string name="empty_snackbar_message">The custom message must not be empty</string>
 
 </resources>

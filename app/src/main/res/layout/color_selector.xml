@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <RadioGroup
+        android:id="@+id/rg_color_selector"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,21 +17,25 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_success_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:buttonTint="@color/successColor"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_error_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:buttonTint="@color/errorColor"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_warning_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:buttonTint="@color/warningColor"/>
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_information_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:buttonTint="@color/infoColor"/>

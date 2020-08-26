@@ -36,6 +36,8 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <include layout="@layout/color_selector" />
+    <include
+        android:id="@+id/color_selector_layout"
+        layout="@layout/color_selector" />
 
 </LinearLayout>
