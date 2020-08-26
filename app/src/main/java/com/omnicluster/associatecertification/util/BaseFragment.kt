@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.omnicluster.associatecertification.util.extensions.hideKeyboard
 
 /**
  *
@@ -13,7 +15,7 @@ import androidx.fragment.app.Fragment
  *
  * @param fragmentLayout [Int] resource id for the layout that will be inflated.
  * */
-abstract class BaseFragment(@LayoutRes private val fragmentLayout: Int) : Fragment(){
+abstract class BaseFragment(@LayoutRes private val fragmentLayout: Int) : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,5 +31,13 @@ abstract class BaseFragment(@LayoutRes private val fragmentLayout: Int) : Fragme
     }
 
     abstract fun setupView()
+
+    fun hideKeyBoard() {
+        activity?.let {
+            if (isAdded) {
+                (it as? AppCompatActivity)?.hideKeyboard()
+            }
+        }
+    }
 
 }
