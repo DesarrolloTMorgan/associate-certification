@@ -1,5 +1,6 @@
 package com.omnicluster.associatecertification.androidcore
 
+import android.view.inputmethod.EditorInfo
 import android.widget.RadioGroup
 import androidx.fragment.app.viewModels
 import com.google.android.material.snackbar.Snackbar
@@ -23,6 +24,14 @@ class SnackBarsFragment : BaseFragment(R.layout.fragment_snackbars) {
             showCustomSnackBar()
         }
         binding.colorSelectorLayout.rgColorSelector.setOnCheckedChangeListener(rgColorListener)
+        binding.etCustomSnackbarMessage.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_SEND) {
+                hideKeyBoard()
+                binding.tilSnackbar.clearFocus()
+                showCustomSnackBar()
+            }
+            return@setOnEditorActionListener true
+        }
 
     }
 

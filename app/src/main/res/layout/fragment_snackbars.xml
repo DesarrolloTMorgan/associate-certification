@@ -32,7 +32,10 @@
             android:id="@+id/et_custom_snackbar_message"
             style="?attr/textInputStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
