@@ -64,6 +64,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation "androidx.fragment:fragment:1.2.5"
     implementation "com.google.android.material:material:1.2.1"
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 
     //Database implementations
     implementation "androidx.room:room-runtime:${rootProject.ext.room_version}"
