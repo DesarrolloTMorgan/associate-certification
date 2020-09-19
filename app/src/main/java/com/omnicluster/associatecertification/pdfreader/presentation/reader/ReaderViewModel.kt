@@ -10,6 +10,7 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.viewModelScope
+import com.omnicluster.associatecertification.AssociateCertificationApp
 import com.omnicluster.associatecertification.pdfreader.framework.FileUtil.MODE_READ
 import com.omnicluster.associatecertification.pdfreader.framework.Interactors
 import com.omnicluster.associatecertification.pdfreader.framework.PDFViewModel
@@ -76,7 +77,7 @@ class ReaderViewModel(application: Application, interactors: Interactors) :
     }
 
     private fun getFileDescriptor(uri: Uri) =
-        app.contentResolver.openFileDescriptor(uri, MODE_READ)
+        getApplication<AssociateCertificationApp>().contentResolver.openFileDescriptor(uri, MODE_READ)
 
     private fun isCurrentPageBookmarked() =
         bookmarks.value?.any { it.page == currentPage.value?.index } == true
