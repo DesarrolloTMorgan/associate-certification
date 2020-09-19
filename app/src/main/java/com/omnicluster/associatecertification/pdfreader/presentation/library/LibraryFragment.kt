@@ -8,18 +8,18 @@ import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
 import com.omnicluster.associatecertification.R
 import com.omnicluster.associatecertification.databinding.FragmentLibraryBinding
+import com.omnicluster.associatecertification.pdfreader.framework.PDFViewModelFactory
 import com.omnicluster.associatecertification.pdfreader.presentation.OpenDocumentInterface
 import com.omnicluster.associatecertification.util.BaseFragment
+import com.omnicluster.associatecertification.util.IntentUtil.READ_REQUEST_CODE
 import com.omnicluster.associatecertification.util.IntentUtil.createOpenPDFIntent
 import com.omnicluster.associatecertification.util.extensions.viewLifecycle
 
 class LibraryFragment : BaseFragment(R.layout.fragment_library) {
 
-    companion object {
-        const val READ_REQUEST_CODE = 100
+    private val viewModel: LibraryViewModel by viewModels {
+        PDFViewModelFactory
     }
-
-    private val viewModel: LibraryViewModel by viewModels()
     private lateinit var openDocumentInterface: OpenDocumentInterface
     private val binding by viewLifecycle(FragmentLibraryBinding::bind)
 
