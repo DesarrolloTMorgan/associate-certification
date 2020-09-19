@@ -5,7 +5,12 @@ import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.os.bundleOf
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
+import androidx.lifecycle.viewModelScope
+import com.omnicluster.associatecertification.pdfreader.framework.FileUtil.MODE_READ
 import com.omnicluster.associatecertification.pdfreader.framework.Interactors
 import com.omnicluster.associatecertification.pdfreader.framework.PDFViewModel
 import com.omnicluster.certification.core.pdfreader.domain.Bookmark
@@ -71,7 +76,7 @@ class ReaderViewModel(application: Application, interactors: Interactors) :
     }
 
     private fun getFileDescriptor(uri: Uri) =
-        application.contentResolver.openFileDescriptor(uri, "r")
+        app.contentResolver.openFileDescriptor(uri, MODE_READ)
 
     private fun isCurrentPageBookmarked() =
         bookmarks.value?.any { it.page == currentPage.value?.index } == true

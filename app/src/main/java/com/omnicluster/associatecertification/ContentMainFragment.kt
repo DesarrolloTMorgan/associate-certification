@@ -1,7 +1,5 @@
 package com.omnicluster.associatecertification
 
-import android.os.Bundle
-import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.omnicluster.associatecertification.databinding.FragmentContentMainBinding
 import com.omnicluster.associatecertification.util.BaseFragment
@@ -23,6 +21,10 @@ class ContentMainFragment : BaseFragment(R.layout.fragment_content_main) {
 
         binding.btnGoToSnackbars.setOnClickListener {
             navController.navigate(R.id.action_fragment_main_content_to_fragment_snackbars)
+        }
+
+        binding.btnGoToPdfReader.setOnClickListener {
+            navController.navigate(R.id.action_fragment_main_content_to_libraryFragment)
         }
     }
 }
