@@ -36,14 +36,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.omnicluster.associatecertification.pdfreader.framework.Interactors
-import com.omnicluster.associatecertification.pdfreader.framework.ReaderViewModel
+import com.omnicluster.associatecertification.pdfreader.framework.PDFViewModel
 import com.omnicluster.certification.core.pdfreader.domain.Document
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class LibraryViewModel(application: Application, interactors: Interactors) :
-    ReaderViewModel(application, interactors) {
+    PDFViewModel(application, interactors) {
 
     private val documents: MutableLiveData<List<Document>> = MutableLiveData()
     val observableDocuments: LiveData<List<Document>>

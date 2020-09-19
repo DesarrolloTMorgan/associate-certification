@@ -52,7 +52,7 @@ class PDFReaderApplication : Application() {
             InMemoryOpenDocumentDataSource()
         )
 
-        ReaderViewModelFactory.inject(
+        PDFViewModelFactory.inject(
             this,
             Interactors(
                 AddBookmark(bookmarkRepository),

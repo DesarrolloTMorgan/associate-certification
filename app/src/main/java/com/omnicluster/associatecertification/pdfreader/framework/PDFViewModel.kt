@@ -33,7 +33,7 @@ package com.omnicluster.associatecertification.pdfreader.framework
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 
-open class ReaderViewModel(application: Application, protected val interactors: Interactors) :
+open class PDFViewModel(application: Application, protected val interactors: Interactors) :
     AndroidViewModel(application) {
 
     protected val application: PDFReaderApplication = getApplication()

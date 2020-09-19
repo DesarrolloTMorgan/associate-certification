@@ -34,19 +34,19 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
-object ReaderViewModelFactory : ViewModelProvider.Factory {
+object PDFViewModelFactory : ViewModelProvider.Factory {
 
     lateinit var application: Application
 
     lateinit var dependencies: Interactors
 
     fun inject(application: Application, dependencies: Interactors) {
-        ReaderViewModelFactory.application = application
-        ReaderViewModelFactory.dependencies = dependencies
+        PDFViewModelFactory.application = application
+        PDFViewModelFactory.dependencies = dependencies
     }
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        if(ReaderViewModelFactory::class.java.isAssignableFrom(modelClass)) {
+        if(PDFViewModelFactory::class.java.isAssignableFrom(modelClass)) {
             return modelClass.getConstructor(Application::class.java, Interactors::class.java)
                 .newInstance(
                     application,
