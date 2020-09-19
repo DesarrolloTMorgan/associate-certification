@@ -42,7 +42,7 @@ import java.io.IOException
 
 object FileUtil {
 
-    private const val MODE_READ = "r"
+    const val MODE_READ = "r"
 
     data class DocumentDetail(val name: String, val size: Int, val thumbnail: String)
 

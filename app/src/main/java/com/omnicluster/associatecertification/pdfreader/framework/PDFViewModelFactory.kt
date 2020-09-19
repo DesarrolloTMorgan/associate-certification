@@ -46,7 +46,7 @@ object PDFViewModelFactory : ViewModelProvider.Factory {
     }
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        if(PDFViewModelFactory::class.java.isAssignableFrom(modelClass)) {
+        if(PDFViewModel::class.java.isAssignableFrom(modelClass)) {
             return modelClass.getConstructor(Application::class.java, Interactors::class.java)
                 .newInstance(
                     application,

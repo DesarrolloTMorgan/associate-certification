@@ -70,6 +70,7 @@ dependencies {
     //Database implementations
     implementation "androidx.room:room-runtime:${rootProject.ext.room_version}"
     implementation "androidx.room:room-ktx:${rootProject.ext.room_version}"
+    kapt "androidx.room:room-compiler:${rootProject.ext.room_version}"
 
     //Test implementations
     testImplementation 'junit:junit:4.12'
