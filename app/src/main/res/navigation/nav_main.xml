@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/fragment_main_content"
         android:name="com.omnicluster.associatecertification.ContentMainFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_content_main">
         <action
             android:id="@+id/action_fragment_main_content_to_fragment_toasts"
@@ -43,8 +44,8 @@
     <fragment
         android:id="@+id/libraryFragment"
         android:name="com.omnicluster.associatecertification.pdfreader.presentation.library.LibraryFragment"
-        android:label="fragment_library"
-        tools:layout="@layout/fragment_library" >
+        android:label="@string/fragment_pdf_reader_library"
+        tools:layout="@layout/fragment_library">
         <action
             android:id="@+id/action_libraryFragment_to_readerFragment"
             app:destination="@id/readerFragment" />
@@ -52,7 +53,7 @@
     <fragment
         android:id="@+id/readerFragment"
         android:name="com.omnicluster.associatecertification.pdfreader.presentation.reader.ReaderFragment"
-        android:label="fragment_reader"
+        android:label="@string/fragment_pdf_reader"
         tools:layout="@layout/fragment_reader" />
 
 </navigation>

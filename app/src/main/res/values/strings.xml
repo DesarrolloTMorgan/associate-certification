@@ -5,6 +5,8 @@
     <string name="fragment_themes">Theme selection</string>
     <string name="fragment_toasts">Toasts messages</string>
     <string name="fragment_snackbars">Snackbar messages</string>
+    <string name="fragment_pdf_reader_library">PDF reader</string>
+    <string name="fragment_pdf_reader">Document</string>
 
     <!-- Content main -->
     <string name="go_to_themes">Go to themes section</string>
