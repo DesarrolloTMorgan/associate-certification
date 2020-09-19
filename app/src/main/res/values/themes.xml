@@ -10,6 +10,7 @@
         <item name="customButton">@style/button_wh</item>
         <item name="spinner">@style/spinner_wh</item>
         <item name="actionBarStyle">@style/action_bar_wh</item>
+        <item name="tabSeparator">@style/Widget.certification.Tab</item>
     </style>
 
     <style name="BaseAppTheme" parent="AppTheme">
@@ -42,6 +43,8 @@
         <item name="actionBarStyle">@style/baseToolbar</item>
 
         <item name="textInputLayoutStyle">@style/textInputLayout</item>
+
+        <item name="tabSeparator">@style/Widget.certification.Tab</item>
     </style>
 
 </resources>

@@ -5,4 +5,5 @@
 
     <!-- PDF Reader -->
     <string name="document_preview">Document preview</string>
+    <string name="bookmark_icon">Bookmark icon</string>
 </resources>
