@@ -34,12 +34,15 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.pdf.PdfRenderer
 import android.net.Uri
+import android.os.Build
 import android.provider.MediaStore
 import android.provider.OpenableColumns
+import androidx.annotation.RequiresApi
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 
+@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 object FileUtil {
 
     const val MODE_READ = "r"

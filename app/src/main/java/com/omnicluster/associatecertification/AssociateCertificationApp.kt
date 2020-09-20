@@ -1,6 +1,7 @@
 package com.omnicluster.associatecertification
 
 import android.app.Application
+import android.os.Build
 import com.omnicluster.associatecertification.pdfreader.framework.InMemoryOpenDocumentDataSource
 import com.omnicluster.associatecertification.pdfreader.framework.Interactors
 import com.omnicluster.associatecertification.pdfreader.framework.PDFViewModelFactory
@@ -21,24 +22,30 @@ class AssociateCertificationApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val bookmarkRepository = BookmarkRepository(RoomBookmarkDataSource(this))
-        val documentRepository = DocumentRepository(
-            RoomDocumentDataSource(this),
-            InMemoryOpenDocumentDataSource()
-        )
+        injectPDFViewModelData()
+    }
 
-        PDFViewModelFactory.inject(
-            this,
-            Interactors(
-                AddBookmark(bookmarkRepository),
-                GetBookmarks(bookmarkRepository),
-                RemoveBookmark(bookmarkRepository),
-                AddDocument(documentRepository),
-                GetDocuments(documentRepository),
-                RemoveDocument(documentRepository),
-                GetOpenDocument(documentRepository),
-                SetOpenDocument(documentRepository)
+    private fun injectPDFViewModelData() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val bookmarkRepository = BookmarkRepository(RoomBookmarkDataSource(this))
+            val documentRepository = DocumentRepository(
+                RoomDocumentDataSource(this),
+                InMemoryOpenDocumentDataSource()
             )
-        )
+
+            PDFViewModelFactory.inject(
+                this,
+                Interactors(
+                    AddBookmark(bookmarkRepository),
+                    GetBookmarks(bookmarkRepository),
+                    RemoveBookmark(bookmarkRepository),
+                    AddDocument(documentRepository),
+                    GetDocuments(documentRepository),
+                    RemoveDocument(documentRepository),
+                    GetOpenDocument(documentRepository),
+                    SetOpenDocument(documentRepository)
+                )
+            )
+        }
     }
 }

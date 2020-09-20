@@ -1,11 +1,14 @@
 package com.omnicluster.associatecertification.pdfreader.framework
 
 import android.content.Context
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.omnicluster.associatecertification.pdfreader.framework.db.DocumentEntity
 import com.omnicluster.associatecertification.pdfreader.framework.db.PDFReaderDatabase
 import com.omnicluster.certification.core.pdfreader.data.DocumentDataSource
 import com.omnicluster.certification.core.pdfreader.domain.Document
 
+@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 class RoomDocumentDataSource(private val context: Context) : DocumentDataSource {
 
     private val documentDao = PDFReaderDatabase.getInstance(context).documentDao()
