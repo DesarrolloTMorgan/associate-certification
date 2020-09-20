@@ -9,5 +9,6 @@
     <attr name="customButton" format="reference" />
     <attr name="spinner" format="reference" />
     <attr name="textInputLayoutStyle" format="reference" />
+    <attr name="tabSeparator" format="reference" />
 
 </resources>

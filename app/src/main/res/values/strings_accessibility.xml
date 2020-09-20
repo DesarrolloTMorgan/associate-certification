@@ -2,4 +2,8 @@
 <resources>
     <!-- Toasts -->
     <string name="custom_view_toast_image">message icon</string>
+
+    <!-- PDF Reader -->
+    <string name="document_preview">Document preview</string>
+    <string name="bookmark_icon">Bookmark icon</string>
 </resources>

@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/fragment_main_content"
         android:name="com.omnicluster.associatecertification.ContentMainFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_content_main">
         <action
             android:id="@+id/action_fragment_main_content_to_fragment_toasts"
@@ -18,6 +19,9 @@
         <action
             android:id="@+id/action_fragment_main_content_to_fragment_snackbars"
             app:destination="@id/fragment_snackbars" />
+        <action
+            android:id="@+id/action_fragment_main_content_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
     </fragment>
 
     <fragment
@@ -37,5 +41,19 @@
         android:name="com.omnicluster.associatecertification.androidcore.SnackBarsFragment"
         android:label="@string/fragment_snackbars"
         tools:layout="@layout/fragment_snackbars" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.omnicluster.associatecertification.pdfreader.presentation.library.LibraryFragment"
+        android:label="@string/fragment_pdf_reader_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readerFragment"
+        android:name="com.omnicluster.associatecertification.pdfreader.presentation.reader.ReaderFragment"
+        android:label="@string/fragment_pdf_reader"
+        tools:layout="@layout/fragment_reader" />
 
 </navigation>
