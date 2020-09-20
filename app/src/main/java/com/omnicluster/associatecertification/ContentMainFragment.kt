@@ -1,9 +1,11 @@
 package com.omnicluster.associatecertification
 
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.omnicluster.associatecertification.databinding.FragmentContentMainBinding
 import com.omnicluster.associatecertification.util.BaseFragment
 import com.omnicluster.associatecertification.util.extensions.viewLifecycle
+import com.omnicluster.associatecertification.util.extensions.visible
 
 class ContentMainFragment : BaseFragment(R.layout.fragment_content_main) {
 
@@ -23,8 +25,17 @@ class ContentMainFragment : BaseFragment(R.layout.fragment_content_main) {
             navController.navigate(R.id.action_fragment_main_content_to_fragment_snackbars)
         }
 
-        binding.btnGoToPdfReader.setOnClickListener {
-            navController.navigate(R.id.action_fragment_main_content_to_libraryFragment)
+        enablePDFReader(navController)
+    }
+
+    private fun enablePDFReader(navController: NavController) {
+        if (MainViewModel.canShowPDFReader()) {
+            binding.btnGoToPdfReader.apply {
+                visible()
+                setOnClickListener {
+                    navController.navigate(R.id.action_fragment_main_content_to_libraryFragment)
+                }
+            }
         }
     }
 }
